@@ -1,0 +1,169 @@
+{
+  "label": "English (USA)",
+  "titleAdjectives": [
+    "Neon",
+    "Velvet",
+    "Midnight",
+    "Golden",
+    "Electric",
+    "Restless",
+    "Silver",
+    "Wild",
+    "Hollow",
+    "Summer",
+    "Paper",
+    "Crystal"
+  ],
+  "titleNouns": [
+    "Signal",
+    "Highway",
+    "River",
+    "Skyline",
+    "Heartbeat",
+    "Mirage",
+    "Thunder",
+    "Garden",
+    "Satellite",
+    "Afterglow",
+    "Promise",
+    "Window"
+  ],
+  "titleVerbs": [
+    "Chasing",
+    "Finding",
+    "Burning",
+    "Holding",
+    "Crossing",
+    "Remembering",
+    "Leaving",
+    "Counting"
+  ],
+  "titlePlaces": [
+    "Brooklyn",
+    "Austin",
+    "Memphis",
+    "Seattle",
+    "Santa Fe",
+    "Chicago",
+    "Oakland",
+    "Nashville"
+  ],
+  "titlePatterns": [
+    "{adjective} {noun}",
+    "{verb} the {noun}",
+    "{noun} in {place}",
+    "{adjective} {noun} Nights",
+    "The {noun} We Kept"
+  ],
+  "artistFirstNames": [
+    "Avery",
+    "Miles",
+    "Harper",
+    "Logan",
+    "Riley",
+    "Jordan",
+    "Quinn",
+    "Maya",
+    "Dylan",
+    "Sloane"
+  ],
+  "artistLastNames": [
+    "Stone",
+    "Wilder",
+    "Monroe",
+    "Reed",
+    "Hayes",
+    "Bennett",
+    "Brooks",
+    "Vale",
+    "Carter",
+    "West"
+  ],
+  "artistCollectives": [
+    "The Night Lines",
+    "Harbor Club",
+    "Static Choir",
+    "The Velvet Maps",
+    "Signal Room",
+    "Copper Avenue",
+    "The Long Weekend",
+    "Metro Bloom"
+  ],
+  "artistPrefixes": [
+    "DJ",
+    "The",
+    "Saint",
+    "Captain",
+    "Little"
+  ],
+  "albumAdjectives": [
+    "Blue",
+    "Open",
+    "Last",
+    "Bright",
+    "Quiet",
+    "Slow",
+    "Lucky",
+    "Northern",
+    "Soft",
+    "Brave"
+  ],
+  "albumNouns": [
+    "Rooms",
+    "Weather",
+    "Letters",
+    "Parade",
+    "Signals",
+    "Oceans",
+    "Stations",
+    "Dreams",
+    "Corners",
+    "Tapes"
+  ],
+  "albumPatterns": [
+    "{adjective} {noun}",
+    "{noun} for the Weekend",
+    "The {adjective} {noun}",
+    "{place} {noun}"
+  ],
+  "genres": [
+    "Indie Pop",
+    "Synthwave",
+    "Alternative R&B",
+    "Dream Pop",
+    "Lo-fi Hip-Hop",
+    "Garage Rock",
+    "Electro Soul",
+    "Folk Pop"
+  ],
+  "reviewMoods": [
+    "warm",
+    "cinematic",
+    "punchy",
+    "bittersweet",
+    "late-night",
+    "radiant",
+    "restless",
+    "polished"
+  ],
+  "reviewImages": [
+    "city lights on wet pavement",
+    "a drive home after midnight",
+    "sunlight through apartment blinds",
+    "a crowded room turning quiet",
+    "headphones on a long train ride",
+    "a summer storm rolling in"
+  ],
+  "reviewMoments": [
+    "the chorus opens up",
+    "the bass line drops into place",
+    "the bridge pulls the track into focus",
+    "the last hook lands with confidence",
+    "the synths leave a bright trail"
+  ],
+  "reviewTemplates": [
+    "\"{title}\" by {artist} feels {mood}, with images of {image}. When {moment}, the track earns its replay value.",
+    "{artist} builds \"{title}\" around a {mood} pulse and a memorable hook. It suggests {image} without losing its store-ready shine.",
+    "A {mood} cut with clean production, \"{title}\" turns {image} into a compact pop scene. {moment} and the song keeps moving."
+  ]
+}

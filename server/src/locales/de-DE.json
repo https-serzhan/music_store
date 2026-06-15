@@ -1,0 +1,169 @@
+{
+  "label": "German (Germany)",
+  "titleAdjectives": [
+    "Neonhelle",
+    "Leise",
+    "Goldene",
+    "Kalte",
+    "Wilde",
+    "Blaue",
+    "Verlorene",
+    "Helle",
+    "Schwere",
+    "Samtige",
+    "Neue",
+    "Stille"
+  ],
+  "titleNouns": [
+    "Straße",
+    "Nacht",
+    "Fenster",
+    "Herzschlag",
+    "Regen",
+    "Stadt",
+    "Schatten",
+    "Signal",
+    "Ufer",
+    "Sommer",
+    "Licht",
+    "Bahnhof"
+  ],
+  "titleVerbs": [
+    "Suche",
+    "Halte",
+    "Träume",
+    "Zähle",
+    "Finde",
+    "Verlier",
+    "Tanze",
+    "Rufe"
+  ],
+  "titlePlaces": [
+    "Berlin",
+    "Hamburg",
+    "Köln",
+    "Leipzig",
+    "München",
+    "Dresden",
+    "Bremen",
+    "Stuttgart"
+  ],
+  "titlePatterns": [
+    "{adjective} {noun}",
+    "{verb} die {noun}",
+    "{noun} in {place}",
+    "{adjective} {noun} Nächte",
+    "Das {noun}, das bleibt"
+  ],
+  "artistFirstNames": [
+    "Lena",
+    "Jonas",
+    "Mira",
+    "Felix",
+    "Clara",
+    "Noah",
+    "Emil",
+    "Hanna",
+    "Mats",
+    "Lea"
+  ],
+  "artistLastNames": [
+    "Keller",
+    "Vogel",
+    "Brandt",
+    "Sommer",
+    "Weber",
+    "Stein",
+    "Lorenz",
+    "Fischer",
+    "Krüger",
+    "Hartmann"
+  ],
+  "artistCollectives": [
+    "Die Nachtlinien",
+    "Kanal Klub",
+    "Echo Park",
+    "Silberstadt",
+    "Das Kleine Radio",
+    "Nordlicht Ensemble",
+    "Blaue Stunde",
+    "Spree Signal"
+  ],
+  "artistPrefixes": [
+    "DJ",
+    "Die",
+    "Herr",
+    "Frau",
+    "Kapitän"
+  ],
+  "albumAdjectives": [
+    "Rote",
+    "Offene",
+    "Letzte",
+    "Helle",
+    "Stille",
+    "Langsame",
+    "Glückliche",
+    "Nordische",
+    "Weiche",
+    "Mutige"
+  ],
+  "albumNouns": [
+    "Zimmer",
+    "Wolken",
+    "Briefe",
+    "Paraden",
+    "Signale",
+    "Meere",
+    "Bahnhöfe",
+    "Träume",
+    "Ecken",
+    "Kassetten"
+  ],
+  "albumPatterns": [
+    "{adjective} {noun}",
+    "{noun} für den Morgen",
+    "Die {adjective} {noun}",
+    "{place} {noun}"
+  ],
+  "genres": [
+    "Deutschpop",
+    "Synthpop",
+    "Indie Rock",
+    "Elektro",
+    "Neue Neue Welle",
+    "Dream Pop",
+    "Lo-fi Beats",
+    "Folk Pop"
+  ],
+  "reviewMoods": [
+    "warm",
+    "filmisch",
+    "druckvoll",
+    "melancholisch",
+    "nächtlich",
+    "hell",
+    "rastlos",
+    "klar produziert"
+  ],
+  "reviewImages": [
+    "Lichter auf nassem Asphalt",
+    "eine S-Bahn kurz vor Mitternacht",
+    "Sonne hinter Altbau-Fenstern",
+    "ein stiller Moment im Club",
+    "Kopfhörer auf einer langen Fahrt",
+    "Sommerregen über der Stadt"
+  ],
+  "reviewMoments": [
+    "der Refrain aufgeht",
+    "die Basslinie einrastet",
+    "die Bridge den Blick weitet",
+    "der letzte Hook sicher landet",
+    "die Synths hell nachklingen"
+  ],
+  "reviewTemplates": [
+    "\"{title}\" von {artist} klingt {mood} und zeichnet {image}. Wenn {moment}, zeigt der Song seine ganze Stärke.",
+    "{artist} baut \"{title}\" auf einem {mood} Groove und einer klaren Melodie. Das Stück erinnert an {image} und bleibt sofort greifbar.",
+    "Ein {mood} Track mit sauberer Produktion: \"{title}\" macht aus {image} eine kleine Szene. Sobald {moment}, zieht der Song nach vorn."
+  ]
+}

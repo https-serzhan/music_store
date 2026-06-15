@@ -1,0 +1,545 @@
+:root {
+  color: #172033;
+  background: #f4f6f8;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: end;
+  gap: 14px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #d8dee8;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 28px rgba(23, 32, 51, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.toolbarGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fieldLabel {
+  font-size: 0.78rem;
+  font-weight: 750;
+  color: #566174;
+  text-transform: uppercase;
+}
+
+.selectControl,
+.textControl,
+.numberControl {
+  height: 38px;
+  border: 1px solid #c8d0dc;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #172033;
+  outline: none;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.selectControl {
+  min-width: 184px;
+  padding: 0 36px 0 12px;
+}
+
+.textControl {
+  padding: 0 12px;
+}
+
+.seedInput {
+  width: 212px;
+}
+
+.numberControl {
+  width: 72px;
+  padding: 0 8px;
+}
+
+.selectControl:focus,
+.textControl:focus,
+.numberControl:focus {
+  border-color: #087f8c;
+  box-shadow: 0 0 0 3px rgba(8, 127, 140, 0.14);
+}
+
+.rangeControl {
+  width: 152px;
+  accent-color: #087f8c;
+}
+
+.button {
+  min-height: 38px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding: 0 14px;
+  font-weight: 750;
+  color: #ffffff;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 120ms ease;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.primaryButton {
+  background: #087f8c;
+}
+
+.primaryButton:hover:not(:disabled) {
+  background: #05636e;
+}
+
+.secondaryButton {
+  color: #172033;
+  background: #ffffff;
+  border-color: #c8d0dc;
+}
+
+.secondaryButton:hover:not(:disabled) {
+  background: #eef3f7;
+  border-color: #9cadbd;
+}
+
+.playButton {
+  background: #bf3646;
+}
+
+.playButton:hover:not(:disabled) {
+  background: #9f2433;
+}
+
+.compactPlayButton {
+  min-height: 32px;
+  padding: 0 12px;
+}
+
+.modeToggle {
+  display: inline-flex;
+  padding: 3px;
+  margin-left: auto;
+  border: 1px solid #c8d0dc;
+  border-radius: 8px;
+  background: #eef3f7;
+}
+
+.modeButton {
+  min-width: 86px;
+  height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #566174;
+  font-weight: 800;
+}
+
+.activeModeButton {
+  color: #ffffff;
+  background: #172033;
+  box-shadow: 0 4px 10px rgba(23, 32, 51, 0.18);
+}
+
+.mainContent {
+  flex: 1;
+  min-height: 0;
+  padding: 20px;
+}
+
+.statePanel {
+  display: grid;
+  min-height: 260px;
+  place-items: center;
+  border: 1px dashed #b7c1cf;
+  border-radius: 8px;
+  color: #566174;
+  background: #ffffff;
+  font-weight: 750;
+}
+
+.errorPanel {
+  color: #9f2433;
+  border-color: #f0a7b1;
+  background: #fff5f6;
+  padding: 24px;
+  text-align: center;
+}
+
+.tableShell {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.tableStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 30px;
+  color: #566174;
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.fetchingText {
+  color: #087f8c;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 16px 36px rgba(23, 32, 51, 0.08);
+}
+
+.songsTable {
+  width: 100%;
+  min-width: 840px;
+  border-collapse: collapse;
+}
+
+.songsTable th {
+  padding: 14px 16px;
+  border-bottom: 1px solid #d8dee8;
+  background: #f8fafc;
+  color: #566174;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.songsTable td {
+  padding: 15px 16px;
+  border-bottom: 1px solid #edf1f5;
+  vertical-align: middle;
+}
+
+.songRow {
+  transition:
+    background 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.songRow:hover {
+  background: #f5fbfc;
+}
+
+.expandedSongRow {
+  background: #edf7f8;
+  box-shadow: inset 4px 0 0 #087f8c;
+}
+
+.indexCell {
+  display: inline-grid;
+  width: 34px;
+  height: 28px;
+  place-items: center;
+  border-radius: 7px;
+  color: #087f8c;
+  background: #e7f5f6;
+  font-weight: 850;
+}
+
+.likesPill {
+  display: inline-grid;
+  min-width: 34px;
+  height: 28px;
+  place-items: center;
+  border-radius: 999px;
+  color: #8a2b17;
+  background: #ffe8d2;
+  font-weight: 850;
+}
+
+.detailsRow td {
+  padding: 0;
+  background: #f8fafc;
+}
+
+.songDetails {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 22px;
+  padding: 22px;
+  border-top: 1px solid #d8dee8;
+}
+
+.coverImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #d8dee8;
+}
+
+.detailsCover {
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(23, 32, 51, 0.16);
+}
+
+.detailsContent {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detailsHeader {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.detailsKicker {
+  margin: 0 0 5px;
+  color: #087f8c;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.detailsHeader h3 {
+  margin: 0;
+  color: #172033;
+  font-size: 1.45rem;
+}
+
+.reviewText {
+  max-width: 760px;
+  margin: 0;
+  color: #3d4656;
+  line-height: 1.65;
+}
+
+.musicMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.musicMeta span,
+.genreTag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  border: 1px solid #c8d0dc;
+  border-radius: 999px;
+  padding: 0 10px;
+  color: #566174;
+  background: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.paginationBar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 0 0;
+}
+
+.galleryScroll {
+  height: calc(100vh - 104px);
+  overflow: auto;
+  padding: 0 2px 32px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.galleryCard {
+  overflow: hidden;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 32px rgba(23, 32, 51, 0.08);
+}
+
+.cardCoverWrap {
+  position: relative;
+}
+
+.cardIndex {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  min-width: 44px;
+  border-radius: 999px;
+  padding: 5px 9px;
+  color: #ffffff;
+  background: rgba(23, 32, 51, 0.78);
+  font-size: 0.82rem;
+  font-weight: 850;
+  text-align: center;
+}
+
+.cardBody {
+  display: flex;
+  min-height: 188px;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardTitleRow h3 {
+  min-width: 0;
+  margin: 0;
+  color: #172033;
+  font-size: 1.02rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.artistLine,
+.albumLine {
+  margin: 0;
+  color: #3d4656;
+  line-height: 1.35;
+}
+
+.albumLine {
+  color: #6b7483;
+  font-size: 0.93rem;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.gallerySentinel {
+  min-height: 72px;
+  display: grid;
+  place-items: center;
+  color: #566174;
+  font-weight: 750;
+}
+
+@media (max-width: 980px) {
+  .toolbar {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .modeToggle {
+    margin-left: 0;
+  }
+
+  .seedGroup {
+    flex: 1 1 430px;
+  }
+
+  .likesGroup {
+    flex: 1 1 320px;
+  }
+}
+
+@media (max-width: 680px) {
+  .toolbar {
+    padding: 12px;
+  }
+
+  .toolbarGroup,
+  .seedGroup,
+  .likesGroup {
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .fieldLabel {
+    width: 100%;
+  }
+
+  .selectControl,
+  .seedInput,
+  .rangeControl,
+  .numberControl,
+  .modeToggle {
+    width: 100%;
+  }
+
+  .mainContent {
+    padding: 12px;
+  }
+
+  .songDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .detailsCover {
+    max-width: 300px;
+  }
+
+  .detailsHeader {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .galleryScroll {
+    height: auto;
+    min-height: calc(100vh - 270px);
+    overflow: visible;
+  }
+}
