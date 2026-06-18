@@ -1,7 +1,6 @@
 import type { Rng } from './rng.js';
 import { chance } from './rng.js';
 
-// Applies a function a fractional number of times: floor(n) guaranteed applications, plus one extra application with probability equal to the fractional part. This matches the Task 5 fractional likes requirement.
 export function times<T>(n: number, rng: Rng, fn: (value: T) => T): (initialValue: T) => T {
   if (n < 0) {
     throw new Error('The first argument cannot be negative.');
