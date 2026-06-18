@@ -16,6 +16,7 @@ coverRoutes.get('/cover', (request, response) => {
       index: query.index,
       title: song.title,
       artist: song.artist,
+      album: song.album,
       genre: song.genre,
     });
 

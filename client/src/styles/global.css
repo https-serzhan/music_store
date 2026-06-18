@@ -303,7 +303,7 @@ button:disabled {
 
 .songDetails {
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: minmax(260px, 300px) 1fr;
   gap: 22px;
   padding: 22px;
   border-top: 1px solid #d8dee8;
@@ -392,7 +392,7 @@ button:disabled {
 
 .galleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 18px;
   max-width: 1440px;
   margin: 0 auto;
@@ -408,6 +408,15 @@ button:disabled {
 
 .cardCoverWrap {
   position: relative;
+  overflow: hidden;
+}
+
+.cardCoverWrap .coverImage {
+  transition: transform 180ms ease;
+}
+
+.galleryCard:hover .cardCoverWrap .coverImage {
+  transform: scale(1.035);
 }
 
 .cardIndex {
